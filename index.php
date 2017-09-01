@@ -15,8 +15,9 @@
     <script src="js/timer.js"></script>
     
     <div id="notif">
-        <img id="x" src="" onclick="close_notif()">
+        <img id="x" src="img/exit.png" onclick="close_notif()">
         <form method="post" id="form">
+            <p>Want a notification?</p>
             <input type="email">
             <div class="g-recaptcha" data-sitekey="6LfNmC4UAAAAAEbps9IMgRS63vJaX4NrRC-v4aem"></div>
             <input type="submit" value="OK">
