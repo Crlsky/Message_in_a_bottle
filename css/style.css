@@ -1,0 +1,109 @@
+body{
+    background-color: #FFFFFF;
+}
+
+canvas {
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#least{
+    font-family: monospace;
+    font-size: 10em;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 20%;
+    color: #000000;
+    z-index: -1;
+}
+
+a {
+    color: #353A3C;
+    font-size: 0.8em;
+    position:absolute;
+    bottom: 0.7em;
+    right: 0.5em;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    cursor: pointer;
+}
+
+#notif { 
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.5;
+    display: none;
+}
+
+#x {
+    width: 10%;
+    height: 10%;
+    right: 1%;
+    top: 1%;
+    position: absolute;
+    cursor: pointer;
+}
+
+#form {
+    align-content: center;
+    position: absolute;
+    margin: auto;
+    top: 30%;
+    left: 30%;
+}
+
+input{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+@keyframes shake {
+    0%{ transform: rotate(0deg);}
+    5%{ transform: rotate(10deg); right: 20px;}
+    10%{ transform: rotate(8deg); right: 20px;}
+    15%{ transform: rotate(8deg); right: 25px;}
+    20%{ transform: rotate(-20deg); left: 0px;}
+    25%{ transform: rotate(8deg); left: 0px;}
+    30%{ transform: rotate(-5deg); left: 0px;}
+    35%{ transform: rotate(8deg); left: 50px;}
+    40%{ transform: rotate(8deg); left: 20px;}
+    45%{ transform: rotate(0deg); left: 20px;}
+    50%{ transform: rotate(0deg); left: 20px;}
+    55%{ transform: rotate(8deg); right: 50px;}
+    60%{ top: 250px;} /* popraw */
+    65%{ top: 250px;}
+    70%{ top: 230px;}
+    75%{ top: 250px;}
+    80%{ top: 200px;}
+    85%{ left: 10px;}
+    90%{ right: 30px;}
+    95%{ transform: rotate(360deg); right: 0px;}
+    100%{ left: 60%;}
+}
+
+@-webkit-keyframes blink {
+    0% {
+        color: #999999; 	
+    }
+    25% {
+        color: #ebebeb;
+    }
+    75%{
+        color: #353A3C;
+    }
+    100%{
+        color: #ebebeb;
+    }
+}
+
