@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>♂♀</title>
+    <title>----♂♀----</title>
     <script src="js/notif.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
