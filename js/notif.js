@@ -7,7 +7,10 @@ function close_notif(){
 }
 
 function check_e(){
-    if(document.getElementsByClassName("error")=="[object HTMLCollection]"){
+    var a = document.getElementsByClassName('error')[0];
+    if(a=="[object HTMLParagraphElement]"){
         document.getElementById("notif").style.display="inherit";
+    }else{
+        document.getElementById("notif").style.display="none";
     }
 }

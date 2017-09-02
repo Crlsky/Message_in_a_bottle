@@ -1,6 +1,5 @@
 <?php
     session_start();
-    require_once('php/sweetcaptcha.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -9,9 +8,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>----♂♀----</title>
     <script src="js/notif.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
-    <script src="js/notif.js">check_e()</script>
     <canvas id="canvas" width="1214" height="981"></canvas>
     <script src="js/noise.js"></script>
     <div id="least"></div>
@@ -23,8 +22,23 @@
         <form method="post" action="php/notification.php" id="form">
             <p>Want a notification?</p>
             <input type="email" name="mail">
-            <p class="error">błąd</p>
-            <?php echo $sweetcaptcha->get_html() ?>
+            <div id="e">
+            <?php 
+                if(isset($_SESSION['e_email'])){
+                    echo $_SESSION['e_email'];
+                    session_destroy();
+                }
+            ?>
+            </div>
+            <div class="g-recaptcha" data-sitekey="6LfNmC4UAAAAAEbps9IMgRS63vJaX4NrRC-v4aem"></div>
+            <div id="e">
+            <?php 
+                if(isset($_SESSION['e_captcha'])){
+                    echo $_SESSION['e_captcha'];
+                    session_destroy();
+                }
+            ?>
+            </div>
             <input type="submit" value="OK">
         </form> 
     </div>

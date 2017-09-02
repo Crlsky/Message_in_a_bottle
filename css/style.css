@@ -37,6 +37,24 @@ p {
     font-size: 2vw;
 }
 
+.error{
+    font-size: xx-small;
+    color: #ff0000;
+    font-style: bold;
+}
+
+.g-recaptcha {
+    opacity: 1;
+}
+
+#e {
+    height: 20px;
+}
+
+input {
+    opacity: 1;
+}
+ 
 #notif { 
     width: 30vw;
     height: 60vh;
@@ -47,8 +65,9 @@ p {
     bottom: 0;
     left: 0;
     background-color: #000000;
-    opacity: 0.5;
+    opacity: 0.8;
     display: none;
+    border-radius: 10px;
 }
 
 #x {
@@ -65,11 +84,6 @@ p {
     margin: auto;
     top: 10vh;
     left: 7vw;
-}
-
-input{
-    margin-top: 4%;
-    margin-bottom: 10%;
 }
 
 @keyframes shake {
