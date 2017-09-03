@@ -20,8 +20,9 @@
     <div id="notif">
         <img id="x" src="img/exit.png" onclick="close_notif()">
         <form method="post" action="php/notification.php" id="form">
-            <p>Want a notification?</p>
-            <input type="email" name="mail">
+            <h1>Want a notification?</h1>
+            <h3>Give us your email!!!</h3>
+            <input id="in" type="email" name="mail">
             <div id="e">
             <?php 
                 if(isset($_SESSION['e_email'])){
@@ -39,7 +40,9 @@
                 }
             ?>
             </div>
-            <input type="submit" value="OK">
+            <div id="submit">
+                <input class="btn" type="submit" value="OK">
+            </div>
         </form> 
     </div>
     <script>check_e()</script>

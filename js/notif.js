@@ -1,5 +1,5 @@
 function notif(){
-    document.getElementById("notif").style.display="inherit";
+    document.getElementById("notif").style.display="inline-block";
 }
 
 function close_notif(){
@@ -9,7 +9,7 @@ function close_notif(){
 function check_e(){
     var a = document.getElementsByClassName('error')[0];
     if(a=="[object HTMLParagraphElement]"){
-        document.getElementById("notif").style.display="inherit";
+        document.getElementById("notif").style.display="inline-block";
     }else{
         document.getElementById("notif").style.display="none";
     }
