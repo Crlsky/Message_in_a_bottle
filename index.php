@@ -17,7 +17,7 @@
     <script src="js/timer.js"></script>
 
     
-    <div id="notif">
+    <div class="pop" id="notif">
         <img id="x" src="img/exit.png" onclick="close_notif()">
         <form method="post" action="php/notification.php" id="form">
             <h1>Want a notification?</h1>
@@ -45,7 +45,23 @@
             </div>
         </form> 
     </div>
+    
+    <div class="pop" id="thanks">
+        <form id="form">
+            <?php 
+                if(isset($_SESSION['thx'])){
+                    echo $_SESSION['thx'];
+                    session_destroy();
+                }
+            ?>
+            <div id="submit">
+                <input class="btn" type="submit" value="OK" onclick="close_thx()">
+            </div>
+
+        </form> 
+    </div>
     <script>check_e()</script>
+    <script>check_thx()</script>
     <a onclick="notif()">notification?</a>
 </body>
 </html>

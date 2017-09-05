@@ -14,3 +14,16 @@ function check_e(){
         document.getElementById("notif").style.display="none";
     }
 }
+
+function check_thx(){
+    var a = document.getElementById('thx');
+    if(a=="[object HTMLHeadingElement]"){
+        document.getElementById("thanks").style.display="inline-block";
+    }else{
+        document.getElementById("thanks").style.display="none";
+    }
+}
+
+function close_thx(){
+    document.getElementById("thanks").style.display="none";
+}

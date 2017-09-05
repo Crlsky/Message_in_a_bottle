@@ -37,7 +37,7 @@
                         $insert_email="INSERT INTO `emails` (`id`, `email`, `date`) VALUES (NULL, '$e_mail', '$date')";
                         $connection->query($insert_email);
                         $connection->close();
-                        $_SESSION['thx']="<p id='thx'>Thanks for trust us</p>";
+                        $_SESSION['thx']="<h1 id='thx'>Thanks for trust us!</h1><h3>We will notify you when timer will show 12 hour to end.</h3>";
                         header("Location: ..");
                     }
                 }
